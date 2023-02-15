@@ -1,0 +1,46 @@
+* {
+  /* https://colorhunt.co/palette/2c36393f4e4fa27b5cdcd7c9 */
+  --pallet-accent: #A27B5C;
+  --pallet-dark: #2C3639;
+  --pallet-dark2: #3F4E4F;
+  --pallet-light: #DCD7C9;
+}
+
+.bg-pallete-accent {
+  background-color: var(--pallet-accent);
+}
+
+.bg-pallete-dark {
+  background-color: var(--pallet-dark);
+}
+
+.bg-pallete-dark2 {
+  background-color: var(--pallet-dark2);
+}
+
+.bg-pallete-light {
+  background-color: var(--pallet-light);
+}
+
+.card {
+  height: 100%;
+}
+
+.carousel-img-sizing {
+  width: 100%;
+  height: 35vw;
+  object-fit: cover;
+}
+
+.country-title {
+  color: var(--pallet-dark);
+  font-family: 'Satisfy', cursive;
+  font-size: 3.5rem;
+}
+
+.accordion-title {
+  color: var(--pallet-light);
+  /* font-family: 'Satisfy', cursive; */
+  font-weight: bold;
+  font-size: 1.8rem;
+}

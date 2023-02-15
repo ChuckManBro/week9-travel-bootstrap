@@ -1,0 +1,128 @@
+<!--
+  WEEK 9 CODING ASSIGNMENT
+  Create a new website using HTML and Bootstrap. The website must include the following:
+  - At least 2 pages.
+  - A Bootstrap navbar, table, and form.
+  - Bootstrap grid used throughout to format elements (Elements should stack vertically when the window is small.)
+
+  Research:
+  Name 5 different Bootstrap components and describe how they work
+  1) Dropdown - of countries in navbar
+  2) Carousel - home page
+  3) Card - locations in each country
+  4) Badge - favorite location
+  5) Accordion - quick facts of each country
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Chuck Travel</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="styles.css"
+		/>
+	</head>
+
+	<body class="bg-pallete-dark2">
+		<!-- Main Logo -->
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-8 col-md-6 col-lg-3 m-4">
+					<img
+						class="img-fluid"
+						src="./images/logo/logo-lg.jpg"
+						alt="Chuck Travel logo"
+					/>
+				</div>
+			</div>
+		</div>
+
+		<!-- Carousel -->
+		<div class="container-fluid p-0">
+			<div
+				id="slides-only"
+				class="carousel slide carousel-fade"
+				data-bs-ride="carousel"
+			>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img
+							class="d-block carousel-img-sizing"
+							src="./images/carousel/carousel-israel.jpeg"
+							alt=""
+						/>
+					</div>
+
+					<div class="carousel-item">
+						<img
+							class="d-block carousel-img-sizing"
+							src="./images/carousel/carousel-jordan.jpeg"
+							alt=""
+						/>
+					</div>
+
+					<div class="carousel-item">
+						<img
+							class="d-block carousel-img-sizing"
+							src="./images/carousel/carousel-egypt.jpeg"
+							alt=""
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Countries Button Group -->
+		<div class="container mt-5 text-center">
+			<div
+				class="btn-group"
+				role="group"
+				aria-label="Basic example"
+			>
+				<a
+					href="./israel.html"
+					type="button"
+					class="btn btn-lg btn-dark"
+				>
+					Israel
+				</a>
+				<a
+					href="./jordan.html"
+					type="button"
+					class="btn btn-lg btn-dark"
+				>
+					Jordan
+				</a>
+				<a
+					href="./egypt.html"
+					type="button"
+					class="btn btn-lg btn-dark"
+				>
+					Egypt
+				</a>
+			</div>
+		</div>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
