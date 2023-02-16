@@ -2,7 +2,7 @@
 
 ## 🌎 Travel Agency Website 🌍
 
-### Promineo Week 8 Coding Assignment Instructions:
+### Coding Assignment Instructions:
 
 - Create a new website using HTML and Bootstrap.
 - At least 2 pages
