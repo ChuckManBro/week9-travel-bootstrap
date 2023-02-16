@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" type="image/png" href="./favicon.png" />
+		<title>Chuck Travel - Egypt</title>
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet" />
+		<!-- Styles -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+
+	<body class="bg-pallete-accent">
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-sm navbar-dark bg-pallete-dark2">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img src="./images/logo/logo-sm.jpg" alt="Chuck Travel logo" />
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNavDropdown"
+					aria-controls="navbarNavDropdown"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav">
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Countries
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a class="dropdown-item" href="./israel.html">Israel</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="./jordan.html">Jordan</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="./egypt.html">Egypt</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container mt-5">
+			<!-- Table -->
+			<div class="row justify-content-center">
+				<div class="col-sm-10 col-md-8 col-lg-6 bg-pallete-light rounded">
+					<table class="table table-hover table-sm">
+						<tr>
+							<th>Name</th>
+							<th>Email ID</th>
+							<th>Phone</th>
+						</tr>
+						<tr class="table-group-divider">
+							<td>John Doe</td>
+							<td>jdoe@gmail.com</td>
+							<td>123-456-7890</td>
+						</tr>
+						<tr>
+							<td>Polly Esther</td>
+							<td>pesther@gmail.com</td>
+							<td>208-555-1234</td>
+						</tr>
+						<tr>
+							<td>William Wallace</td>
+							<td>billy@yahoo.com</td>
+							<td>208-765-4321</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<!-- Form 2nd Attempt -->
+			<div class="row justify-content-center mt-5 mb-5">
+				<div class="col-10 col-md-8 col-lg-6 bg-pallete-light rounded">
+					<form action="">
+						<fieldset>
+							<legend class="text-center p-2">Contact Us</legend>
+
+							<div class="mb-3">
+								<label class="form-label" for="firstName">First Name</label>
+								<input class="form-control" type="text" id="firstName" required />
+							</div>
+
+							<div class="mb-3">
+								<label class="form-label" for="lastName">Last Name</label>
+								<input class="form-control" type="text" id="lastName" />
+							</div>
+
+							<div class="mb-1">
+								<label class="form-label" for="email">Email</label>
+								<input class="form-control" type="email" id="email" required />
+							</div>
+
+							<div class="form-check form-switch mb-4">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									role="switch"
+									id="subscribeSwitch"
+									checked
+								/>
+								<label class="form-check-label" for="subscribeSwitch"
+									>Subscribe to monthy newsletter</label
+								>
+							</div>
+
+							<div class="mb-3">
+								<label class="form-label">Interested in:</label>
+
+								<div class="form-check">
+									<input
+										class="form-check-input"
+										type="checkbox"
+										id="inlineCheckbox1"
+										value="option1"
+									/>
+									<label class="form-check-label" for="inlineCheckbox1">Israel</label>
+								</div>
+
+								<div class="form-check">
+									<input
+										class="form-check-input"
+										type="checkbox"
+										id="inlineCheckbox2"
+										value="option2"
+									/>
+									<label class="form-check-label" for="inlineCheckbox2">Jordan</label>
+								</div>
+
+								<div class="form-check">
+									<input
+										class="form-check-input"
+										type="checkbox"
+										id="inlineCheckbox2"
+										value="option2"
+									/>
+									<label class="form-check-label" for="inlineCheckbox2">Egypt</label>
+								</div>
+							</div>
+
+							<div class="mb-3">
+								<label for="comment" class="form-label">Comment</label
+								><textarea id="comment" class="form-control" rows="3"></textarea>
+							</div>
+							<button class="btn btn-dark w-100 mb-3" type="submit">Submit</button>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- Form 1st Attempt -->
+		<!-- <form>
+			<div class="container bg-pallete-light rounded p-3 mt-4">
+				<div class="row">
+					<div class="col">
+						<input
+							type="text"
+							class="form-control"
+							placeholder="First name"
+							aria-label="First name"
+						/>
+					</div>
+					<div class="col">
+						<input
+							type="text"
+							class="form-control"
+							placeholder="Last name"
+							aria-label="Last name"
+						/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+							<label class="form-check-label" for="flexCheckDefault"> Israel </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+							<label class="form-check-label" for="flexCheckDefault"> Jordan </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+							<label class="form-check-label" for="flexCheckDefault"> Egypt </label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="mb-3">
+						<label for="exampleFormControlInput1" class="form-label">Email address</label>
+						<input
+							type="email"
+							class="form-control"
+							id="exampleFormControlInput1"
+							placeholder="name@example.com"
+						/>
+						<div class="form-check form-switch">
+							<input
+								class="form-check-input"
+								type="checkbox"
+								role="switch"
+								id="flexSwitchCheckChecked"
+								checked
+							/>
+							<label class="form-check-label" for="flexSwitchCheckChecked"
+								>Subscribe to monthly newsletter</label
+							>
+						</div>
+					</div>
+					<div class="mb-3">
+						<label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+					</div>
+				</div>
+				<div class="row">
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</div>
+			</div>
+		</form> -->
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
